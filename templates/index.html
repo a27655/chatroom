@@ -52,6 +52,7 @@
     // 滚动到底部
     var scrollToBottom = function(selector){
         var height = $(selector).prop("scrollHeight");
+        log('kjkj', height)
         $(selector).animate({
             scrollTop: height
         }, 300);

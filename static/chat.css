@@ -59,7 +59,7 @@ height: 3px;
 width: 40px;
 background-color: #cc9900;
 position: relative;
-left: 166.5px;
+left: 136.5px;
 }
 .chat-main {
   display: flex;
@@ -68,7 +68,6 @@ left: 166.5px;
 }
 .lift-content {
   flex-grow: 1;
-  height: 100%;
   width: 375px;
 }
 .right-content {

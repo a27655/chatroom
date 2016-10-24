@@ -32,7 +32,7 @@
 /* 必须指定height和overflow-y */
 #id-div-chats {
     background-color: #607D8B;
-    height: 80%;
+    height: 86%;
     overflow-y: scroll;
 }
 
@@ -49,7 +49,7 @@ body {
   font-size: 20px;
   margin: 0px;
   color: white;
-  background-color: #f1f0ec;
+  background-color: white;
   overflow: auto;
 }
 
@@ -70,7 +70,8 @@ left: 136.5px;
 }
 .lift-content {
   flex-grow: 1;
-  width: 375px;
+  width: 364px;
+  height: 100%;
 }
 .right-content {
   width: 68%;
@@ -134,4 +135,16 @@ h1 {
 }
 a:hover {
   text-decoration: none;
+}
+#id-button-send {
+    width: 100%;
+}
+#id-input-content {
+    width: 100%;
+}
+.pure-form-stacked {
+    width: 99%;
+    margin: 0;
+    background-color: #607d8b;
+    padding-top: 15px;
 }

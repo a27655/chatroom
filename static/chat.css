@@ -34,6 +34,7 @@
     background-color: #607D8B;
     height: 86%;
     overflow-y: scroll;
+    border-radius: 7px 7px 0 0;
 }
 
 .rc-input {
@@ -49,7 +50,7 @@ body {
   font-size: 20px;
   margin: 0px;
   color: white;
-  background-color: white;
+  background-color: #f3eee7;
   overflow: auto;
 }
 
@@ -72,6 +73,7 @@ left: 136.5px;
   flex-grow: 1;
   width: 364px;
   height: 100%;
+  background-color: #f3eee7;
 }
 .right-content {
   width: 68%;

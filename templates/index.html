@@ -244,7 +244,7 @@
    <div class="chat-main">
     <div id='id-div-channels' class="rc-left lift-content">
       <div class="d-lift-content">
-        <h1>聊天室</h1>
+        <div class="h1-div-class">聊天室</div>
         {% if not user %}
         <div class="main-login-register">
           <div>
@@ -293,6 +293,16 @@
           <a class="rc-channel" href="#">游戏</a>
           <a class="rc-channel" href="#">灌水</a>
         </div>
+        {% if not user %}
+        <div class="login-user-user">
+          <div class="login-user-avatar">
+            <img src="{{user.avatar}}" alt="" />
+          </div>
+          <div class="login-user-username">
+            {{user.username}}
+          </div>
+        </div>
+        {% endif %}
       </div>
     </div>
     <div class="rc-main right-content">

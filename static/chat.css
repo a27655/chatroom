@@ -89,12 +89,13 @@ h1 {
     font-size: 30px;
 }
 .gua-input-login {
-    height: 30px;
+    height: 36px;
     width: 70%;
     padding: 10px;
     font-size: 10px;
     border-style: hidden;
     border-radius: 3px;
+    margin: 10px 0;
 }
 .gua-button-login {
     height: 30px;
@@ -102,4 +103,9 @@ h1 {
     border-style: hidden;
     background-color: #d4ab32;
     border-radius: 2px;
+    margin: 10px 0;
+}
+.span-font {
+    font-size: 15px;
+    color: black;
 }

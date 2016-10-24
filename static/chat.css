@@ -2,9 +2,11 @@
     width: 90%;
 }
 
-.rc-left {
-    float: left;
-    width: 100px;
+.d-lift-content {
+
+    
+    width: 80%;
+    background-color: red;
 }
 
 .rc-channel {
@@ -20,15 +22,41 @@
     height: 100%
 }
 
-#id-div-chats {
+/*#id-div-chats {
     /*background: red;*/
-    height: 80%;
+    /*height: 80%;
     overflow-y: scroll;
-}
+}*/
 
 .rc-input {
     /*height: 200px;*/
     position: fixed;
     bottom: 0px;
     left: 100px;
+}
+body {
+  font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.gua-hedden {
+  display: none;
+}
+.gua-block {
+height: 3px;
+width: 40px;
+background-color: #cc9900;
+position: relative;
+left: 92px;
+}
+.chat-main {
+  display: flex;
+  background-color: #a0c9dc;
+}
+.left-content {
+  flex-grow: 1;
+}
+.right-content {
+  flex-grow: 3;
 }

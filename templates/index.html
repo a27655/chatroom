@@ -5,28 +5,6 @@
     <link rel="stylesheet" href="/static/pure-min.css">
     <link rel="stylesheet" href="/static/bootstrap.css">
     <link rel="stylesheet" href="/static/chat.css">
-    <style media="screen">
-      body {
-        font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
-        font-size: 20px;
-        margin: 0px;
-      }
-
-      .gua-hedden {
-        display: none;
-      }
-      .gua-block {
-      height: 3px;
-      width: 40px;
-      background-color: #cc9900;
-      position: relative;
-      left: 92px;
-      }
-      .chat-main {
-        display: flex;
-        background-color: yellow;
-      }
-    </style>
     <script src="/static/jquery.min.js"></script>
     <script type="text/javascript">
     var heddenLogin = function () {
@@ -265,6 +243,7 @@
  <body>
    <div class="chat-main">
     <div id='id-div-channels' class="rc-left lift-content">
+      <div class="d-lift-content">
         <h1>聊天室</h1>
         {% if not user %}
         <div class="main-login-register">
@@ -314,8 +293,10 @@
           <a class="rc-channel" href="#">游戏</a>
           <a class="rc-channel" href="#">灌水</a>
         </div>
+      </div>
     </div>
     <div class="rc-main right-content">
+      <div class="d-right-content">
         <div id="id-div-chats">
             <!-- <div class="chat-item model-id-579cbda07fd9f73e16eca0a6 burstStart read burstFinal">
                 <div class="chat-item__container">

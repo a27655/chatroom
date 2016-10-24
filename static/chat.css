@@ -4,7 +4,7 @@
 
 .d-lift-content {
 
-
+  height: 100%;
   width: 18%;
   background-color: #009688;
   margin: 0 auto;
@@ -29,8 +29,10 @@
 /*.rc-main {
     height: 100%;
 }*/
-
+/* 必须指定height和overflow-y */
 #id-div-chats {
+    background-color: #607D8B;
+    height: 80%;
     overflow-y: scroll;
 }
 

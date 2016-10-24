@@ -106,7 +106,6 @@ def chat_add():
         'created_time': current_time(),
     }
     message = json.dumps(r, ensure_ascii=False)
-    print('debug', message)
     # 用 redis 发布消息
     m = Message(r)
     m.save()

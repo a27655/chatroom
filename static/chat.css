@@ -32,7 +32,7 @@
 /* 必须指定height和overflow-y */
 #id-div-chats {
     background-color: #607D8B;
-    height: 80%;
+    height: 100%;
     overflow-y: scroll;
 }
 
@@ -134,7 +134,4 @@ h1 {
 }
 a:hover {
   text-decoration: none;
-}
-#id-div-chats {
-  overflow: auto;
 }

@@ -25,9 +25,9 @@
   padding: 5px;
 }
 
-.rc-main {
+/*.rc-main {
     height: 100%;
-}
+}*/
 
 /*#id-div-chats {
     /*background: red;*/
@@ -49,6 +49,7 @@ body {
   margin: 0px;
   color: white;
   background-color: #f1f0ec;
+  overflow: auto;
 }
 
 .gua-hedden {
@@ -132,4 +133,7 @@ h1 {
 }
 a:hover {
   text-decoration: none;
+}
+#id-div-chats {
+  overflow: auto;
 }

@@ -197,7 +197,7 @@
  <body>
     <div id='id-div-channels' class="rc-left">
         <h1>聊天室</h1>
-        {% if user == None %}
+        {% if not user %}
           <div class="rc-login">
             <form class="" action="/chatroom/login" method="post">
               <input type="text" name="username" placeholder="用户名">
@@ -265,7 +265,7 @@
                 </div>
             </div> -->
         </div>
-      {% if user is not None %}
+      {% if user %}
         <div class="rc-input">
             <form class="pure-form pure-form-stacked">
                 <input id='id-input-name' class="rc-full-width" type="hidden" value="{{user.username}}">

@@ -4,12 +4,13 @@
 
 .d-lift-content {
 
-    height: 100%;
-    width: 70%;
-    background-color: #009688;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 7px;
+  height: 100%;
+  width: 18%;
+  background-color: #009688;
+  margin: 0 auto;
+  text-align: left;
+  border-radius: 7px;
+  position: fixed;
 }
 
 .rc-channel {
@@ -49,7 +50,6 @@ body {
   margin: 0px;
   color: white;
   background-color: #f1f0ec;
-  overflow: auto;
 }
 
 .gua-hedden {
@@ -135,5 +135,5 @@ a:hover {
   text-decoration: none;
 }
 #id-div-chats {
-  overflow: auto;
+  overflow: scroll;
 }

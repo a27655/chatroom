@@ -34,33 +34,6 @@ def admin_required(f):
     return function
 
 
-@app.route('/chatroom/login', methods=['POST'])
-def login():
-    form = request.form
-    username = form.get('username','')
-    user = User.query.filter_by(username=username).first()
-    status, msg = user.validate_login(form)
-    if status:
-        session['user_id'] = user.id
-        return render_template('index.html', message=msg, user=user)
-    else:
-        user = current_user()
-        return render_template('index.html', message=msg, user=user)
-#
-@app.route('/chatroom/register', methods=['POST'])
-def register():
-    form = request.form
-    uu = current_user()
-    u = User(form)
-    status, msgs = u.valid()
-    if status:
-        u.save()
-        message = msgs[0]
-        return render_template('index.html', message=message, user=uu)
-    else:
-        message = msgs[1]
-        return render_template('index.html', message=message, user=uu)
-
 '''
 # 使用 gunicorn 启动
 gunicorn --worker-class=gevent -t 9999 redischat:app -b 0.0.0.0:8000
@@ -140,6 +113,35 @@ def chat_add():
     red.publish(chat_channel, message)
 
     return 'OK'
+
+
+@app.route('/chatroom/login', methods=['POST'])
+def login():
+    form = request.form
+    username = form.get('username','')
+    user = User.query.filter_by(username=username).first()
+    status, msg = user.validate_login(form)
+    if status:
+        session['user_id'] = user.id
+        return render_template('index.html', message=msg, user=user)
+    else:
+        user = current_user()
+        return render_template('index.html', message=msg, user=user)
+#
+@app.route('/chatroom/register', methods=['POST'])
+def register():
+    form = request.form
+    uu = current_user()
+    u = User(form)
+    status, msgs = u.valid()
+    if status:
+        u.save()
+        message = msgs[0]
+        return render_template('index.html', message=message, user=uu)
+    else:
+        message = msgs[1]
+        return render_template('index.html', message=message, user=uu)
+
 
 
 if __name__ == '__main__':

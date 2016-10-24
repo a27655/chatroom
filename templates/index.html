@@ -177,9 +177,21 @@
       });
     };
 
+
+
+    var changeAavatar = function () {
+      $('.update-avatar').change(function() {
+      var img = $(".update-avatar").val()
+      var oldimg = $('.update-avatar').closest('.form-update-user').find('.see-avatar-one')
+      oldimg.attr('src', img)
+      })
+    }
+
+
     var __main = function(){
       subscribe();
       bindActions();
+      changeAavatar();
       // 选中第一个 channel 作为默认 channel
       $('.rc-channel')[0].click();
       // 更新时间的函数
@@ -206,7 +218,7 @@
             </form>
           </div>
           <div class="">
-            <form class="" action="/chatroom/register" method="post">
+            <form class="form-update-user" action="/chatroom/register" method="post">
               <div class="form-have-update-avatar">
               <select class="update-avatar" name="avatar">
                 <option class="one-avatar"value="/static/img/1.jpg">钢铁侠</option>
@@ -222,13 +234,13 @@
               </select>
                 <span>*头像暂不支持上传*</span>
                 <div class="see-avatar">
-                  <span class="span-avatar">头像预览：<span><img height="100px"width="100px"class="see-avatar-one"src="/static/img/1.jpg" alt="" />
+                  <span class="span-avatar">头像预览：<span><img height="50px"width="50px"class="see-avatar-one"src="/static/img/1.jpg" alt="" />
                 </div>
               </div>
               <input type="text" name="username" placeholder="注册用户名必须大于4位">
               <input type="text" name="password" placeholder="注册密码必须大于4位">
               <input type="text" name="captcha" placeholder="验证码“吃瓜群众”">
-              <button type="submit" name="button">提交</button>
+              <button type="submit" name="button">注册</button>
             </form>
           </div>
         {% endif %}

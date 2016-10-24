@@ -4,19 +4,21 @@
 
 .d-lift-content {
 
-    height: 100%
+    height: 100%;
     width: 70%;
-    background-color: #175c92;
+    background-color: black;
     margin: 0 auto;
+    text-align: center;
 }
 
 .rc-channel {
     display: block;
-    padding-left: 20px;
     font-size: 20px;
 }
 .active {
-    background: red;
+  background: red;
+  color: #a0c9dc;
+  padding: 5px;
 }
 
 .rc-main {
@@ -53,7 +55,7 @@ left: 92px;
 }
 .chat-main {
   display: flex;
-  background-color: #a0c9dc;
+  background-color: #192125;
 }
 .lift-content {
   flex-grow: 1;

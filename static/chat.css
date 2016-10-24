@@ -4,7 +4,7 @@
 
 .d-lift-content {
 
-  height: 100%;
+
   width: 18%;
   background-color: #009688;
   margin: 0 auto;
@@ -30,11 +30,10 @@
     height: 100%;
 }*/
 
-/*#id-div-chats {
-    /*background: red;*/
-    /*height: 80%;
+#id-div-chats {
+    height: 80%;
     overflow-y: scroll;
-}*/
+}
 
 .rc-input {
     /*height: 200px;*/
@@ -73,7 +72,7 @@ left: 136.5px;
   width: 375px;
 }
 .right-content {
-  flex-grow: 6;
+  width: 68%;
   background-color: #607D8B;
   border-radius: 7px;
 }

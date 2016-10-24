@@ -15,6 +15,9 @@
 .rc-channel {
     display: block;
     font-size: 20px;
+    color: white;
+    margin: 20px;
+    border-radius: 7px;
 }
 .active {
   background-color: white;
@@ -80,5 +83,7 @@ h1 {
 }
 .h1-div-class {
     color: white;
-    font-size: 20xp;
+    height: 50px;
+    padding: 25px;
+    font-size: 30px;
 }

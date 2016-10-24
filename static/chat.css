@@ -32,7 +32,7 @@
 /* 必须指定height和overflow-y */
 #id-div-chats {
     background-color: #607D8B;
-    height: 100%;
+    height: 80%;
     overflow-y: scroll;
 }
 

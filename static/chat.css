@@ -6,7 +6,7 @@
 
     height: 100%;
     width: 70%;
-    background-color: black;
+    background-color: #009688;
     margin: 0 auto;
     text-align: center;
 }
@@ -16,7 +16,7 @@
     font-size: 20px;
 }
 .active {
-  background: red;
+  background-color: white;
   color: #a0c9dc;
   padding: 5px;
 }
@@ -41,6 +41,7 @@ body {
   font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
   font-size: 20px;
   margin: 0px;
+  color: white;
 }
 
 .gua-hedden {
@@ -55,14 +56,14 @@ left: 92px;
 }
 .chat-main {
   display: flex;
-  background-color: #192125;
+  background-color: white;
 }
 .lift-content {
   flex-grow: 1;
   height: 100%;
 }
 .right-content {
-  flex-grow: 3;
+  flex-grow: 6;
 }
 h1 {
     font-size: 1.802em;

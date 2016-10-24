@@ -11,7 +11,7 @@ from flask import session
 from flask import url_for
 from flask import abort
 
-from user import *
+from models import *
 
 def current_user():
     uid = session.get('user_id')

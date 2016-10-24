@@ -50,7 +50,7 @@ body {
   margin: 0px;
   color: white;
   background-color: #f1f0ec;
-  overflow-x: auto;
+  overflow: auto;
 }
 
 .gua-hedden {
@@ -136,5 +136,5 @@ a:hover {
   text-decoration: none;
 }
 #id-div-chats {
-  overflow-x: auto;
+  overflow: auto;
 }

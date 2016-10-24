@@ -255,15 +255,15 @@
           <div class="rc-login gua-have-form-login">
             <h6>快来登录一起聊得飞起吧</h6>
             <form class="" action="/chatroom/login" method="post">
-              <input type="text" name="username" placeholder="用户名">
-              <input type="text" name="password" placeholder="密码">
-              <button type="submit" name="button">登录</button>
+              <input class="gua-input-login"type="text" name="username" placeholder="用户名">
+              <input class="gua-input-login"type="password" name="password" placeholder="密码">
+              <button class="gua-button-login"type="submit" name="button">登录</button>
             </form>
           </div>
           <div class="gua-have-form-register gua-hedden">
             <form class="form-update-user" action="/chatroom/register" method="post">
               <div class="form-have-update-avatar">
-              <select class="update-avatar" name="avatar">
+              <select class="update-avatar gua-input-login" name="avatar">
                 <option class="one-avatar"value="/static/img/1.jpg">钢铁侠</option>
                 <option class="one-avatar"value="/static/img/2.jpg">蝙蝠侠</option>
                 <option class="one-avatar"value="/static/img/3.jpg">美国队长</option>
@@ -275,15 +275,15 @@
                 <option class="one-avatar"value="/static/img/9.jpg">鸣人</option>
                 <option class="one-avatar"value="/static/img/10.jpg">喜羊羊</option>
               </select>
-                <span>*头像暂不支持上传*</span>
+                <span class="span-font">*头像暂不支持上传*</span>
                 <div class="see-avatar">
                   <span class="span-avatar">头像预览：<span><img height="50px"width="50px"class="see-avatar-one"src="/static/img/1.jpg" alt="" />
                 </div>
               </div>
-              <input type="text" name="username" placeholder="注册用户名必须大于4位">
-              <input type="text" name="password" placeholder="注册密码必须大于4位">
-              <input type="text" name="captcha" placeholder="验证码“吃瓜群众”">
-              <button type="submit" name="button">注册</button>
+              <input class="gua-input-login"type="text" name="username" placeholder="注册用户名必须大于4位">
+              <input class="gua-input-login"type="text" name="password" placeholder="注册密码必须大于4位">
+              <input class="gua-input-login"type="text" name="captcha" placeholder="验证码“吃瓜群众”">
+              <button class="gua-button-login"type="submit" name="button">注册</button>
             </form>
           </div>
         </div>

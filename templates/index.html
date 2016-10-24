@@ -5,8 +5,50 @@
     <link rel="stylesheet" href="/static/pure-min.css">
     <link rel="stylesheet" href="/static/bootstrap.css">
     <link rel="stylesheet" href="/static/chat.css">
+    <style media="screen">
+      .gua-hedden {
+        display: none;
+      }
+      .gua-block {
+      height: 3px;
+      width: 40px;
+      background-color: #cc9900;
+      position: relative;
+      left: 92px;
+      }
+    </style>
     <script src="/static/jquery.min.js"></script>
     <script type="text/javascript">
+    var heddenLogin = function () {
+      $('#gua-login').on('click', function(){
+        var alogin = $(this)
+        var login = alogin.closest('.main-login-register').find('.gua-have-form-login')
+        var register = alogin.closest('.main-login-register').find('.gua-have-form-register')
+        var block = alogin.closest('.main-login-register').find('.gua-block')
+        login.removeClass('gua-hedden')
+        register.addClass('gua-hedden')
+        block.animate({"left": "92px"}, "fast")
+        return false;
+      })
+
+    }
+
+    var heddenRegister = function() {
+      $('#gua-register').on('click', function(){
+        var aregister = $(this)
+        var register = aregister.closest('.main-login-register').find('.gua-have-form-register')
+        var login = aregister.closest('.main-login-register').find('.gua-have-form-login')
+        var block = aregister.closest('.main-login-register').find('.gua-block')
+        register.removeClass('gua-hedden')
+        login.addClass('gua-hedden')
+        block.animate({"left": "168px"}, "fast")
+        return false;
+
+      })
+    }
+
+
+
     // 频道和消息
     var chatStore = {
         '大厅': [],
@@ -193,6 +235,9 @@
       subscribe();
       bindActions();
       changeAavatar();
+      heddenLogin();
+      heddenRegister();
+
       // 选中第一个 channel 作为默认 channel
       $('.rc-channel')[0].click();
       // 更新时间的函数
@@ -211,14 +256,21 @@
     <div id='id-div-channels' class="rc-left">
         <h1>聊天室</h1>
         {% if not user %}
-          <div class="rc-login">
+        <div class="main-login-register">
+          <div>
+            <a id="gua-login"class="gua-a"href="#">登录</a>
+            <a id="gua-register"class="gua-a"href="#">注册</a>
+            <div class="gua-block"></div>
+          </div>
+          <div class="rc-login gua-have-form-login">
+            <h6>快来登录一起聊得飞起吧</h6>
             <form class="" action="/chatroom/login" method="post">
               <input type="text" name="username" placeholder="用户名">
               <input type="text" name="password" placeholder="密码">
               <button type="submit" name="button">登录</button>
             </form>
           </div>
-          <div class="">
+          <div class="gua-have-form-register gua-hedden">
             <form class="form-update-user" action="/chatroom/register" method="post">
               <div class="form-have-update-avatar">
               <select class="update-avatar" name="avatar">
@@ -244,6 +296,7 @@
               <button type="submit" name="button">注册</button>
             </form>
           </div>
+        </div>
         {% endif %}
         <div class="">
           <a class="rc-channel" href="#">大厅</a>

@@ -33,7 +33,7 @@ def admin_required(f):
     return function
 
 
-@main.route('/chatroom/login', methods=['POST'])
+@app.route('/chatroom/login', methods=['POST'])
 def login():
     form = request.form
     username = form.get('username','')
@@ -46,7 +46,7 @@ def login():
         user = current_user()
         return render_template('index.html', message=msg, user=user)
 #
-@main.route('/chatroom/register', methods=['POST'])
+@app.route('/chatroom/register', methods=['POST'])
 def register():
     form = request.form
     uu = current_user()
@@ -62,7 +62,7 @@ def register():
 
 '''
 # 使用 gunicorn 启动
-gunicorn --worker-class=gevent -t 9999 redischat:app
+gunicorn --worker-class=gevent -t 9999 redischat:app -b 0.0.0.0:8000
 # 开启 debug 输出
 gunicorn --log-level debug --worker-class=gevent -t 999 redis_chat81:app
 # 把 gunicorn 输出写入到 gunicorn.log 文件中

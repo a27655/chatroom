@@ -96,11 +96,15 @@ def current_time():
 @admin_required
 def chat_add():
     msg = request.get_json()
-    user = msg.get('user', '')
+    user_id = msg.get('user_id', '')
+    u = User.query.get(user_id)
+    username = u.username
+    avatar = u.avatar
     content = msg.get('content', '')
     channel = msg.get('channel', '')
     r = {
-        'user': user,
+        'user': username,
+        'avatar': avatar,
         'content': content,
         'channel': channel,
         'created_time': current_time(),

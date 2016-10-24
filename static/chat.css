@@ -87,3 +87,18 @@ h1 {
     padding: 25px;
     font-size: 30px;
 }
+.gua-input-login {
+    height: 30px;
+    width: 70%;
+    padding: 10px;
+    font-size: 10px;
+    border-style: hidden;
+    border-radius: 3px;
+}
+.gua-button-login {
+    height: 30px;
+    width: 70%;
+    border-style: hidden;
+    background-color: #d4ab32;
+    border-radius: 2px;
+}

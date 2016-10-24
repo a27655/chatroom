@@ -27,7 +27,6 @@
 
 .rc-main {
     height: 100%;
-    margin: 0 auto;
 }
 
 /*#id-div-chats {
@@ -65,6 +64,7 @@ left: 166.5px;
 .chat-main {
   display: flex;
   background-color: white;
+  margin: 0 auto;
 }
 .lift-content {
   flex-grow: 1;
@@ -131,6 +131,6 @@ h1 {
     background-color: #d4ab32;
     color: white;
 }
-.gua-a {
+a:hover {
   text-decoration: none;
 }

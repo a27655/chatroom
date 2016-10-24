@@ -4,9 +4,10 @@
 
 .d-lift-content {
 
-    
-    width: 80%;
-    background-color: red;
+    height: 100%
+    width: 70%;
+    background-color: #175c92;
+    margin: 0 auto;
 }
 
 .rc-channel {
@@ -54,9 +55,14 @@ left: 92px;
   display: flex;
   background-color: #a0c9dc;
 }
-.left-content {
+.lift-content {
   flex-grow: 1;
+  height: 100%;
 }
 .right-content {
   flex-grow: 3;
+}
+h1 {
+    font-size: 1.802em;
+     margin: 0;
 }

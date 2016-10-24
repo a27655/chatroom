@@ -65,6 +65,7 @@ left: 92px;
 .lift-content {
   flex-grow: 1;
   height: 100%;
+  width: 375px;
 }
 .right-content {
   flex-grow: 6;

@@ -151,5 +151,6 @@ if __name__ == '__main__':
     config = dict(
         host='0.0.0.0',
         debug=True,
+        post=8000,
     )
     app.run(**config)

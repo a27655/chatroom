@@ -164,10 +164,10 @@ a:hover {
     font-style: oblique;
     font-family: fantasy;
 }
-.login-user-username：hover {
+.login-user-username:hover {
   background-color: white;
 }
-.login-user-avatar: hover {
+.login-user-avatar:hover {
   background-color: white;
 }
 .not-login-user {
@@ -175,6 +175,6 @@ a:hover {
   width: 161px;
   margin: 0 auto;
 }
-.not-login-user: hover {
+.not-login-user:hover {
   background-color: white;
 }

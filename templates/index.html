@@ -301,13 +301,13 @@
         </div>
         {% if not user %}
           <div class="not-login-user">
-            游客你好，请登录  
+            游客你好，请登录
           </div>
         {% endif %}
         {% if user %}
         <div class="login-user-user">
           <div class="login-user-avatar">
-            <img src="{{user.avatar}}" alt="" />
+            <img height="150px"width="150px"src="{{user.avatar}}" alt="" />
           </div>
           <div class="login-user-username">
             {{user.username}}

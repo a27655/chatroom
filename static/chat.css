@@ -153,3 +153,28 @@ a:hover {
 .js-chat-item-from {
     color: bisque;
 }
+.login-user-avatar {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.login-user-username {
+    margin: 20px;
+    color: #f7835f;
+    font-style: oblique;
+    font-family: fantasy;
+}
+.login-user-username：hover {
+  background-color: white;
+}
+.login-user-avatar: hover {
+  background-color: white;
+}
+.not-login-user {
+  color: #ef8b6c;
+  width: 161px;
+  margin: 0 auto;
+}
+.not-login-user: hover {
+  background-color: white;
+}

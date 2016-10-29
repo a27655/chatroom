@@ -172,8 +172,6 @@ a:hover {
 }
 .not-login-user {
   color: #ef8b6c;
-  width: 161px;
-  margin: 0 auto;
 }
 .not-login-user:hover {
   background-color: white;

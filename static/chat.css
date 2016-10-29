@@ -154,6 +154,7 @@ a:hover {
     color: bisque;
 }
 .login-user-avatar {
+    margin: 20px;
     height: 150px;
     margin: 0 auto;
 }

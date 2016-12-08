@@ -82,7 +82,7 @@ def subscribe():
         mimetype="text/event-stream")
 
 
-@app.route('/chatroom/')
+@app.route('/chatroom')
 def index_view():
     u = current_user()
     return flask.render_template('index.html', user=u)

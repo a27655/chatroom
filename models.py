@@ -53,7 +53,7 @@ class User(db.Model, ModelMixin):
         self.username = form.get('username', '')
         self.password = form.get('password', '')
         self.created_time = self.time()
-        self.avatar = form.get('avatar', '/chatroom/static/img/1.jpg')
+        self.avatar = form.get('avatar', '/static/img/1.jpg')
         self.captcha = form.get('captcha', '')
     # 验证注册用户的合法性的
     def valid(self):

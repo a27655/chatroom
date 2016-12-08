@@ -123,14 +123,17 @@ def login():
     form = request.form
     username = form.get('username','')
     user = User.query.filter_by(username=username).first()
-    status, msg = user.validate_login(form)
-    if status:
-        session['user_id'] = user.id
-        return render_template('index.html', message=msg, user=user)
+    if user:
+        status, msg = user.validate_login(form)
+        if status:
+            session['user_id'] = user.id
+            return render_template('index.html', message=msg, user=user)
+        else:
+            user = current_user()
+            return render_template('index.html', message=msg, user=user)
     else:
-        user = current_user()
-        return render_template('index.html', message=msg, user=user)
-#
+        return render_template('index.html', message='用户不存在', user=user)
+
 @app.route('/chatroom/register', methods=['POST'])
 def register():
     form = request.form

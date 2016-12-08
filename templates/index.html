@@ -120,7 +120,7 @@
     };
 
     var subscribe = function() {
-      var sse = new EventSource("chatroom/subscribe");
+      var sse = new EventSource("/subscribe");
       sse.onmessage = function(e) {
         log(e, e.data);
         chatResponse(e.data);
@@ -137,7 +137,7 @@
       };
 
       var request = {
-        url: '/chatroom/chat/add',
+        url: '/chat/add',
         type: 'post',
         contentType: 'application/json',
         data: JSON.stringify(message),

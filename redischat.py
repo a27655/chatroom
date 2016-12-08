@@ -75,7 +75,7 @@ def stream():
             yield 'data: {}\n\n'.format(data)
 
 
-@app.route('/chatroom/subscribe')
+@app.route('/subscribe')
 @admin_required
 def subscribe():
     return flask.Response(stream(), 
